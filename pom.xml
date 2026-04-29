@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.springedu</groupId>
+
+    <artifactId>SpringEduManager</artifactId>
+
+    <version>1.0</version>
+
+    <parent>
+
+        <groupId>org.springframework.boot</groupId>
+
+        <artifactId>spring-boot-starter-parent</artifactId>
+
+        <version>3.2.5</version>
+
+    </parent>
+
+    <dependencies>
+
+        <!-- WEB -->
+        <dependency>
+
+            <groupId>
+                org.springframework.boot
+            </groupId>
+
+            <artifactId>
+                spring-boot-starter-web
+            </artifactId>
+
+        </dependency>
+
+        <!-- THYMELEAF -->
+        <dependency>
+
+            <groupId>
+                org.springframework.boot
+            </groupId>
+
+            <artifactId>
+                spring-boot-starter-thymeleaf
+            </artifactId>
+
+        </dependency>
+
+        <!-- JPA -->
+        <dependency>
+
+            <groupId>
+                org.springframework.boot
+            </groupId>
+
+            <artifactId>
+                spring-boot-starter-data-jpa
+            </artifactId>
+
+        </dependency>
+
+        <!-- SECURITY -->
+        <dependency>
+
+            <groupId>
+                org.springframework.boot
+            </groupId>
+
+            <artifactId>
+                spring-boot-starter-security
+            </artifactId>
+
+        </dependency>
+
+        <!-- H2 -->
+        <dependency>
+
+            <groupId>com.h2database</groupId>
+
+            <artifactId>h2</artifactId>
+
+            <scope>runtime</scope>
+
+        </dependency>
+
+    </dependencies>
+
+</project>
