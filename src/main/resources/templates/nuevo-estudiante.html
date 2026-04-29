@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Nuevo Estudiante</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/styles.css}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Nuevo Estudiante</h1>
+
+    <form th:action="@{/estudiantes}"
+          th:object="${estudiante}"
+          method="post">
+
+        <label>Nombre</label>
+
+        <input type="text"
+               th:field="*{nombre}"
+               required>
+
+        <label>Email</label>
+
+        <input type="email"
+               th:field="*{email}"
+               required>
+
+        <button type="submit">
+
+            Guardar
+
+        </button>
+
+    </form>
+
+    <a href="/estudiantes">
+
+        Volver
+
+    </a>
+
+</div>
+
+</body>
+
+</html>
